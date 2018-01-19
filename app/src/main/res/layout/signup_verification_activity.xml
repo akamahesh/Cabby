@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E6E7">
+
+
+    <RelativeLayout
+        android:id="@+id/signup_payment_navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background" >
+
+        <Button
+            android:id="@+id/signup_payment_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back_button"
+            android:text="@string/next"
+            android:textColor="@drawable/white_to_black_text" />
+
+        <TextView
+            android:id="@+id/txt_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:text="@string/create_account"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_create_account"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/timeline_second_step"
+            android:layout_marginTop="5dp"
+            />          <!-- android:background="@drawable/add_number_stage2"-->
+
+        <Button
+            android:id="@+id/signup_back"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button"
+            android:text="@string/back"
+            android:textColor="@drawable/white_to_black_text" />
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/sentverification_codeone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sentVerification"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signup_payment_navigationbar"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:textColor="#656363" />
+
+    <LinearLayout
+        android:id="@+id/linear_verificationnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sentverification_codeone_tv"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/sentverification_codetwo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp"
+            android:textColor="#656363" />
+
+        <TextView
+            android:id="@+id/verificationnumber_countrycode_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp"
+            android:textColor="#656363" />
+        <TextView
+            android:id="@+id/verificationnumber_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sfg"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp"
+            android:textColor="#656363" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_verificationcode"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="@string/verificationCOde"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/linear_verificationnumber"
+        android:textSize="12dp"
+        android:focusable="true"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textStyle="bold"
+        android:textColor="#656363"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border_su"/>
+    <TextView
+        android:id="@+id/didnot_receive_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/didnotSent"
+        android:layout_below="@id/et_verificationcode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textColor="#656363" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/didnot_receive_tv"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+        <Button
+            android:id="@+id/resend_verificationcode_bt"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="@string/messageAgain"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:background="#636162"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ourcabby.passenger"
+    android:versionCode="59"
+    android:versionName="3.3">
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="22" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="false" />
+
+    <permission
+        android:name="com.ourcabby.passenger.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- Permission for maps -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- To check App is in Fore/Background -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--
+  Creates a custom permission so only this app can receive its messages.
+ 
+  NOTE: the permission *must* be called PACKAGE.permission.C2D_MESSAGE,
+        where PACKAGE is the application's package name.
+    -->
+    <permission
+        android:name="com.ourcabby.passenger.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.ourcabby.passenger.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Permission for maps -->
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- library -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="PACKAGE_NAME.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- to get the sms automatically -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.roadyo.passenger.main.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.roadyo.passenger.main.SignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.roadyo.passenger.main.SigninActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.roadyo.passenger.main.SignupVerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name="com.roadyo.passenger.main.MainActivityDrawer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.WalletHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.Support_ChildActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.HomePagePopUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <!--  -->
+        <activity
+            android:name="com.roadyo.passenger.main.SignupPayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.WebViewActivityPrivacy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.SupportWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.AddCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.DeleteCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.SearchAddressGooglePlacesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.FareQuoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.RequestPickup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.TermsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roadyo.passenger.main.ForgotPwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name="com.roadyo.passenger.main.ChangeCardActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="eu.janmuller.android.simplecropimage.CropImage" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <!-- For using cardIo -->
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="io.card.payment.DataEntryActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.roadyo.passenger.main.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.ourcabby.passenger" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.roadyo.passenger.main.GcmIntentService" />
+
+        <receiver
+            android:name="com.roadyo.passenger.main.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDytADPjebrw8KzPaR9rUSyHEH_Kk_xfD0" />
+        <!--3embedsoft@gmail.com
+             3Embed007$
+             name - Cabby-->
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="8c41e9486e74492897473de501e087dbc6d9f391" />
+
+    </application>
+
+</manifest>

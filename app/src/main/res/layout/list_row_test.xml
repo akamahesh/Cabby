@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_appointment_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/date_status_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/border_without_bottom"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp">
+
+                <ImageView
+                    android:id="@+id/img_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/calender_time_icon" />
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/img_duration"
+                    android:layout_toEndOf="@+id/img_duration"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_apt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp">
+
+                <TextView
+                    android:id="@+id/apt_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="abc"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_status_layout"
+            android:background="@drawable/border_with_bottom" >
+
+            <RelativeLayout
+                android:id="@+id/driver_profile_pic_appointment_layout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/calender_imagethumbnail" >
+
+                <ImageView
+                    android:id="@+id/driver_profile_pic_appointment"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_driver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/driver_profile_pic_appointment_layout"
+                android:layout_toRightOf="@+id/driver_profile_pic_appointment_layout" >
+
+                <TextView
+                    android:id="@+id/driver_name_appointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_driver_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/driver_profile_pic_appointment_layout"
+                android:layout_toRightOf="@+id/driver_profile_pic_appointment_layout" >
+
+                <ImageView
+                    android:id="@+id/img_pickup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/calender_pickuplocation_icon" />
+
+                <TextView
+                    android:id="@+id/pickup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:singleLine="true"
+                    android:layout_toRightOf="@+id/img_pickup"
+                    android:layout_toEndOf="@+id/img_pickup"
+                    android:textColor="@color/history_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_pickup"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/driver_profile_pic_appointment_layout"
+                android:layout_toRightOf="@+id/driver_profile_pic_appointment_layout" >
+
+                <ImageView
+                    android:id="@+id/img_drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/calender_dropoff_icon" />
+
+                <TextView
+                    android:id="@+id/drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:singleLine="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toRightOf="@+id/img_drop"
+                    android:layout_toEndOf="@+id/img_drop"
+                    android:textColor="@color/history_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_drop"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/driver_profile_pic_appointment_layout"
+                android:layout_toRightOf="@+id/driver_profile_pic_appointment_layout" >
+
+                <TextView
+                    android:id="@+id/img_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/currencuSymbol"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="sjkv"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_toRightOf="@+id/img_distance"
+                    android:layout_toEndOf="@+id/img_distance"
+                    android:textColor="@color/history_text" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

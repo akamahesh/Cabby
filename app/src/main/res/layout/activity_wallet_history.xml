@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/addressBackground">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/background">
+
+        <RelativeLayout
+            android:id="@+id/back_layout"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_btn_selector"
+            android:clickable="true">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/login_btn_back_btn" />
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/recent_transaction"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:weightSum="3"
+        android:id="@+id/title"
+        android:layout_below="@+id/actionBar"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/all_button"
+            android:text="@string/all"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/money_in_button"
+            android:layout_weight="1"
+            android:text="@string/moneyIn"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/money_out_button"
+            android:text="@string/moneyOut"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/wallet_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:layout_below="@+id/title">
+    </ListView>
+
+</RelativeLayout>

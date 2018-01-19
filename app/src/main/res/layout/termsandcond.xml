@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/lightgrey1">
+<RelativeLayout 
+        android:id="@+id/navigation_relative_profile"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/background">
+        <RelativeLayout 
+            android:id="@+id/rl_TermsandCond"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/back_btn_selector"
+            android:clickable="true"
+            >
+        <ImageButton 
+            android:id="@+id/back_button_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/login_btn_back_btn"
+            android:layout_centerVertical="true"/>
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/legal"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@id/img_logo"
+            android:layout_toEndOf="@id/img_logo"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        </RelativeLayout>
+        
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/about_details"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/terms_background"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/navigation_relative_profile"
+        >
+
+        <TextView
+            android:id="@+id/btn_terms_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:gravity="center"
+            android:text="@string/terms_and_conditions" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgrey"/>
+
+
+        <TextView
+            android:id="@+id/btn_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:gravity="center"
+            android:text="@string/privacy_policy" />
+        
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alertDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+    <LinearLayout
+        android:id="@+id/car_type_details_eta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cardetails_carinfo_bg"
+        android:orientation="horizontal"
+        android:visibility="visible" 
+        android:weightSum="3">
+        
+      <RelativeLayout 
+          android:id="@+id/first_row"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+          <TextView
+            android:id="@+id/eta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/distance"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/eta_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eta"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000" />
+          
+      </RelativeLayout>
+        
+        
+	<RelativeLayout 
+          android:id="@+id/second_row"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+        <TextView
+            android:id="@+id/min_fair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/min_fair"
+            android:textColor="#000000" />
+        
+        <TextView
+            android:id="@+id/min_fair_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/min_fair"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000" />
+        
+         </RelativeLayout>
+         
+	<RelativeLayout 
+          android:id="@+id/third_row"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+        <TextView
+            android:id="@+id/max_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/max_size" 
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/max_size_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/max_size"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000" />
+        
+        </RelativeLayout>
+    </LinearLayout>
+    
+    
+	
+<RelativeLayout
+        android:id="@+id/rl_car_service"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/car_type_details_eta"
+        android:background="#C0C0C0"
+        android:visibility="visible"
+        >
+    
+    <TextView
+        android:id="@+id/service_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:layout_centerInParent="true"
+        android:textColor="#000000"
+        />
+    <ImageButton
+        android:id="@+id/service_type_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="5dp"
+        android:textColor="#000000"
+        android:background="@drawable/close_btn"
+        android:visibility="gone"
+        />
+    
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_price_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cardetails_bg"
+        android:visibility="visible" >
+    
+        <RelativeLayout 
+            android:id="@+id/rl_car_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+            <ImageView 
+            android:id="@+id/img_car_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardetails_divider"
+            />
+        </RelativeLayout>
+        
+    <RelativeLayout 
+        android:id="@+id/rl_min_base_fair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/base_fair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="$ 00 Base fare"
+            android:textColor="#333333" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_base_fair_for_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rl_min_base_fair"
+        android:layout_marginTop="50dp"
+         >
+
+        <TextView
+            android:id="@+id/base_fair_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 00/Min and"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/base_fair_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/base_fair_min"
+            android:layout_toEndOf="@+id/base_fair_min"
+            android:text="$ 00/Miles"
+            android:textColor="#333333" />
+    </RelativeLayout>
+    
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/value"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/surge_price"
+        android:layout_above="@+id/rl_car_service"
+        android:layout_marginBottom="30dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textSurge"
+        android:text="@string/surge_price"
+        android:layout_above="@+id/value"
+        android:padding="10dp"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

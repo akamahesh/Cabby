@@ -1,0 +1,655 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outer_map_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+
+    <RelativeLayout
+        android:id="@+id/show_address_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/whiteTransperant"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/address_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/home_search"
+            android:padding="3dp" />
+
+        <TextView
+            android:id="@+id/Appointment_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pickup_location"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/show_addr_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Appointment_location"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/address_search_button"
+            android:layout_toEndOf="@+id/address_search_button"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000" />
+
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/map_hybrid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_address_relative"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/hybrid_map_selector"
+        android:visibility="gone"/>
+   
+
+    <RelativeLayout
+        android:id="@+id/relative_pickup_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/background"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/back_btn_selector"
+            android:clickable="true"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/login_btn_back_btn" />
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/btn_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_roadyo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/confirmation"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_pickup_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_pickup_navigation"
+        android:background="@drawable/address_bar_selector"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/img_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/conformation_icn_currentlocation" />
+
+        <TextView
+            android:id="@+id/txt_pickup_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/img_map"
+            android:layout_toEndOf="@+id/img_map"
+            android:text="@string/pickup_location"
+            android:textColor="#055F1A" />
+
+        <TextView
+            android:id="@+id/pickup_location_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_pickup_location"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img_map"
+            android:layout_toEndOf="@+id/img_map"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_dropoff_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_pickup_location"
+        android:background="@drawable/address_bar_selector"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/img_dropoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/conformation_icn_dropoff" />
+
+        <TextView
+            android:id="@+id/txt_dropoff_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/img_dropoff"
+            android:layout_toEndOf="@+id/img_dropoff"
+            android:text="@string/drop_location"
+            android:textColor="#055F1A" />
+
+        <Button
+            android:id="@+id/add_drop_off_location"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/add_location_selector"
+            android:text="+"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/dropoff_location_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_dropoff_location"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/add_drop_off_location"
+            android:layout_toStartOf="@+id/add_drop_off_location"
+            android:layout_toRightOf="@+id/img_dropoff"
+            android:layout_toEndOf="@+id/img_dropoff"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/now_later_layout"
+        android:background="@color/transperantWhite"
+        android:scrollbars="none"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relative_all_car_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/now_later_layout">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/previous"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/home_left_arrow_icon_off" />
+            <ImageView
+                android:id="@+id/next"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/home_next_arrow_icon_off"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear">
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/now_later_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_smoke"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/now_button"
+            android:layout_width="0dp"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_weight="1"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginEnd="0.5dp"
+            android:background="@color/background"
+            android:text="@string/now"
+            android:textColor="@color/dark_orange"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/later_button"
+            android:layout_width="0dp"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_weight="1"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginStart="0.5dp"
+            android:background="@color/background"
+            android:text="@string/later"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/mid_pointer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/map_icn_currentlocation" />
+
+    <RelativeLayout
+        android:id="@+id/relative_center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mid_pointer"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pickuplocation_selector"
+        android:clickable="true" >
+        <com.gc.materialdesign.views.ProgressBarCircularIndetermininate
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#1E88E5" />
+        <TextView
+            android:id="@+id/txt_pickup_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="05dp"
+            android:gravity="center"
+            android:textColor="@drawable/white_to_black_text"
+            android:textSize="15sp"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/rate_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_pickup_distance"
+            android:layout_marginBottom="08dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@drawable/white_to_black_text"
+            android:textSize="5sp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/txt_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/set_pickup_location"
+            android:textColor="@drawable/white_to_black_text"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/set_loaction_bottom_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/request_pick_up_here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/pickup_selector"
+        android:text="@string/request_pickup"
+        android:textColor="@drawable/white_to_black_text"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dummy_view"
+        android:layout_above="@+id/relative_card_info"
+        android:layout_below="@+id/relative_dropoff_location"/>
+    <RelativeLayout
+        android:id="@+id/relative_card_info"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_above="@+id/fare_promo_layouy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/payment_type_selector"
+        android:clickable="true"
+        android:visibility="gone" >
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/card_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:text="@string/select_payment_type"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fare_promo_layouy"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_above="@+id/request_pick_up_here"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_weight="1"
+            android:background="@drawable/fare_quote_selector"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textFare"
+                android:paddingTop="5dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:textSize="8sp"
+                android:text="@string/approxFare"/>
+
+        <Button
+            android:id="@+id/fare_quote"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/fare_quote_selector"
+            android:text="@string/fare_quote"
+            android:textColor="@color/grey"
+            android:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/promo_code"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:background="@drawable/promo_code_selector"
+            android:text="@string/promo_code"
+            android:textColor="@color/grey"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_distance_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <include layout="@layout/driver_infoxml"
+            android:id="@+id/driverinfo"/>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/driver_on_the_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/driver_conformation_bg"
+        android:text="@string/driver_on_the_way"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/choose_payment_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/payment_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white_smoke"
+            android:text="@string/promo_cancel"
+            android:textColor="#007aff"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/payment_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/payment_cancel"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white_smoke"
+            android:text="@string/card"
+            android:textColor="#007aff"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/payment_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/payment_card"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white_smoke"
+            android:text="@string/cash"
+            android:textColor="#007aff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/driver_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/relative_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp" >
+
+            <Button
+                android:id="@+id/share_eta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/drivermenu_popup_topcell"
+                android:text="@string/share_eta"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/contact_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/share_eta"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/drivermenu_popup_topcell"
+                android:text="@string/contact_driver"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/cancel_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_driver"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/drivermenu_popup_topcell"
+                android:text="@string/cancel_trip"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/doc_eta_res__odw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:text="Not Avail"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/doc_dist_res_odw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Not Avail"
+                android:textColor="#333333" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

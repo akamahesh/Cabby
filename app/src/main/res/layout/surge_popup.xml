@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popupHeight"
+        android:id="@+id/surgeLayout"
+        android:background="@color/yellow">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/surgePrice"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="05dp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageLayout"
+        android:layout_marginTop="-60dp"
+        android:orientation="vertical"
+        android:background="@color/transparent">
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/circleLayout"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_background"
+            android:layout_below="@+id/textLayout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/carImage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/surgeText"
+                    android:layout_marginTop="08dp"
+                    android:layout_below="@+id/carImage"
+                    android:text="1.5X"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:textSize="40sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/type"
+                    android:layout_below="@+id/surgeText"
+                    android:layout_marginTop="20dp"
+                    android:textSize="08sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text="silver"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/surgeText"
+            android:textAlignment="center"
+            android:lineSpacingExtra="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:text="@string/promo_cancel"
+        android:background="@drawable/buttonbackground"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/acceptHigherRate"
+        android:text="@string/acceptHigherRate"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:background="@drawable/buttonbackground"
+        android:padding="15dp"/>
+
+
+
+</LinearLayout>

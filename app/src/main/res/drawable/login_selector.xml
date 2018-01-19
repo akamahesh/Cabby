@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:drawable="@color/yellow" android:state_pressed="true"/> <!-- pressed -->
+<item android:drawable="@color/yellow" android:state_focused="true"/> <!-- focused -->
+<item android:drawable="@color/loginSelector"/> <!-- default -->
+
+</selector>
+
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:drawable="@color/login" android:state_pressed="true"/> pressed
+<item android:drawable="@color/login" android:state_focused="true"/> focused
+<item android:drawable="@drawable/roadyo_footer_left"/> default
+
+</selector>
+ -->

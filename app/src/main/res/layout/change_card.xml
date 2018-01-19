@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/login_navigation_relative"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/background" >
+        
+        <RelativeLayout 
+            android:id="@+id/rl_change_card"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/back_btn_selector"
+            android:clickable="true">
+        <ImageButton
+            android:id="@+id/login_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/login_btn_back_btn"
+            android:visibility="visible" />
+     <!--    <ImageView 
+            android:id="@+id/roadyo_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zogo_navigation_bar_logo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/login_back_button"/> -->
+
+        <TextView
+            android:id="@+id/login_nav_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/roadyo_logo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/select_payment"
+            android:textSize="18sp"
+            android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+  <!--   <TextView 
+        android:id="@+id/txt_select_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_navigation_relative"
+        android:text="@string/select_payment"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        
+        /> -->
+    
+    
+    <ListView
+        android:id="@+id/change_cards_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_navigation_relative"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/save_change_card_btn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_btn_selector"
+        android:gravity="center_vertical|center"
+        android:text="@string/save"
+        android:textColor="#ffffff" 
+        android:visibility="invisible"/>
+
+</RelativeLayout>

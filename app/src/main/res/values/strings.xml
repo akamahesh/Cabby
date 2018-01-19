@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ourcabby</string>
+    <string name="app_website">www.Ourcabby.com</string>
+    <string name="appname"><font fgcolor="#ffffffff">Ourcabby</font></string>
+    <string name="menu"><font fgcolor="#ffffffff">MENU</font></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="condition">Terms &amp; Conditions</string>
+    <string name="privacy">Privacy &amp; Policy</string>
+    <string name="cvc">CVC</string>
+    <string name="cardNumber">Card Number</string>
+    <string name="save">SAVE</string>
+    <string name="back">BACK</string>
+    <string name="backButton">Back</string>
+    <string name="skip">SKIP</string>
+    <string name="nocabs">No Cabs</string>
+    <string name="currencuSymbol">₹</string>
+    <string name="distanceUnit">Km</string>
+    <string name="registeron">Register on</string>
+    <string name="profileLogout">Your profile is rejected by our admin</string>
+    <string name="next">NEXT</string>
+    <string name="phone">PHONE(09121112222)</string>
+    <string name="zipcode">ZIPCODE</string>
+    <string name="register">REGISTER</string>
+    <string name="apply">APPLY</string>
+    <string name="progressMessage">Adding card..</string>
+    <string name="validationErrors">Validation Errors</string>
+    <string name="edit">EDIT</string>
+    <string name="imagedire">imagedire</string>
+    <string name="imagefilename">Ourcabby img</string>
+    <string name="pay_cash">Pay with cash</string>
+    <string name="pay_card">Pay with card</string>
+    <string name="str_atv_places">Appointment location</string>
+    <string name="later">LATER</string>
+    <string name="now">NOW</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="rate_googlePlay">RATE US IN GOOGLE PLAY</string>
+    <string name="like_onFacebook"> LIKE US ON FACEBOOK</string>
+    <string name="instagram"> FOLLOW US ON INSTAGRAM</string>
+    <string name="telegram"> JOIN Ourcabby TELEGRAM CHANNEL</string>
+    <string name="legal">LEGAL</string>
+    <string name="choosecountry">Choose Country</string>
+    <string name="scan_credit_card">SCAN YOUR CREDIT CARD</string>
+    <string name="enter_credit_card">Enter credit card information</string>
+    <string name="not_a_valid_card"> You did not enter a valid card</string>
+    <string name="progress">progress</string>
+    <string name="fill_all_fields">Please fill all the required information.</string>
+    <string name="requestTimeout">Request Timeout </string>
+    <string name="Card_Added_Successfully">Card Added Successfully!!</string>
+    <string name="server_error">Network Error. Retry.</string>
+    <string name="invalid_email">Please enter valid Email ID</string>
+    <string name="enter_verificationcode">Enter the verification code.</string>
+    <string name="enter_correct_verification">Enter the valid verification code.</string>
+    <string name="add_credit_card">ADD CREDIT CARD</string>
+    <string name="credit_card_num">Credit Card Number</string>
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYY</string>
+    <string name="cvv">CVV</string>
+    <string name="error">Error:</string>
+    <string name="ok">OK</string>
+    <string name="no_bookings_for_day">No Bookings found in this day</string>
+    <string name="select_payment">ADD CARD</string>
+    <string name="deleting_card">Deleting card. Please wait</string>
+    <string name="card_removed">Card Removed Successfully</string>
+    <string name="card_info">CARD INFO</string>
+    <string name="expiry">EXP</string>
+    <string name="delete_card">Delete Card</string>
+    <string name="share_eta">SHARE ETA</string>
+    <string name="contact_driver">CONTACT DRIVER</string>
+    <string name="cancel_trip">CANCEL TRIP</string>
+    <string name="fare_quote">FARE ESTIMATE</string>
+    <string name="bookNow">BOOK NOW</string>
+    <string name="promo_code">PROMO CODE</string>
+    <string name="enter_promo_code">Enter Promo Code</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="drop_location">Dropoff Location</string>
+    <string name="fare_may_vary_line1">Fare may vary due to traffic, weather</string>
+    <string name="fare_may_vary_line2">and other factors. Estimate doesnot</string>
+    <string name="fare_may_vary_line3">include discount or promotions</string>
+    <string name="new_destination">ENTER A NEW DESTINATION</string>
+    <string name="network_connection_fail">Network connection fail</string>
+    <string name="enter_valid_email">Please enter a valid email id</string>
+    <string name="email_empty">Please enter your Email Id.</string>
+    <string name="mobile_empty">Please enter your mobile no.</string>
+    <string name="mobile_empty_check">Please add 0 before your mobile number</string>
+    <string name="mobileTen">Please add 11 digit mobile number</string>
+    <string name="passValidation">Your password should contain atleast 6 characters</string>
+    <string name="please_wait">Please Wait…</string>
+    <string name="mobileInvalid">Please enter a valid mobile Number</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="email">Email*</string>
+    <string name="by_create">By creating account you agree our</string>
+    <string name="minute">MIN</string>
+    <string name="minutes">Minutes</string>
+    <string name="email_registered">Email already registered choose other.</string>
+    <string name="password">PASSWORD</string>
+    <string name="passwordsignup">Password*</string>
+    <string name="referal">Referral code (optional)</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="user_name">MOBILE NUMBER</string>
+    <string name="login">LOGIN</string>
+    <string name="cancel_account_creation">CANCEL ACCOUNT CREATION</string>
+    <string name="cancel_account_creation_alert">Are you sure you want to cancel? Your information will not be saved.</string>
+    <string name="cancelYourbooking">Are you sure you want to cancel later booking?</string>
+    <string name="password_strength_low">Password strength: Low</string>
+    <string name="signedUp">You have successfully signed up</string>
+    <string name="password_strength_low_message">Please set the password which contain a mixture of alphabets and numbers.</string>
+    <string name="first_name_empty">Please enter your first name.</string>
+    <string name="message">Message</string>
+    <string name="last_name_empty">Last name field is empty.</string>
+    <string name="password_empty">Please enter your password</string>
+    <string name="password_sould_not_empty">Password field should not be empty.</string>
+    <string name="mobile_registered">Mobile already registered choose other.</string>
+    <string name="phone_num_empty">Phone.No field is empty.</string>
+    <string name="zipcode_empty">Zipcode field is empty.</string>
+    <string name="confirm_password_empty">"Confirm Password field is empty."</string>
+    <string name="passwords_not_match">confirm password not matching with password entry.</string>
+    <string name="accept_terms_conditions">"Please accept Terms and Conditions."</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="first_name">FIRST NAME</string>
+    <string name="firstName">First Name*</string>
+    <string name="last_name">LAST NAME</string>
+    <string name="lastName">Last Name</string>
+    <string name="submit">Submit</string>
+    <string name="driver_cancelled_booking">Driver Cancelled Booking Request</string>
+    <string name="select_date_time">Select Date and Time</string>
+    <string name="select_payment_type">SELECT PAYMENT TYPE</string>
+    <string name="select_dropoff_location">Please select the dropoff location</string>
+    <string name="driver_phone_num_not_available">Driver number not available</string>
+    <string name="cancelling_trip">Cancelling Trip</string>
+    <string name="gps_settings">GPS settings</string>
+    <string name="gps_alert_message">Location on high accuracy mode required. Turn this feature ON from Location Services in your phone settings</string>
+    <string name="network_alert_message">Please check your Internet connection and try again.</string>
+    <string name="settings">Settings</string>
+    <string name="go_to_settings">go to settings</string>
+    <string name="network_settings">Network settings</string>
+    <string name="wifi_settings">Wifi settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="card">CARD</string>
+    <string name="cash">CASH</string>
+    <string name="promo_cancel">CANCEL</string>
+    <string name="credit_cards_not_found">Payment method does not contain any credit card details. Please go to Payment menu and add the card details.</string>
+    <string name="dist">Dist:</string>
+    <string name="eta">TIME:</string>
+    <string name="error_message">Error. Please Retry!</string>
+    <string name="set_pickup_location">SET PICKUP LOCATION</string>
+    <string name="set_drop_location">SET DROP LOCATION</string>
+    <string name="miles">KM</string>
+    <string name="no_drivers_found">NO DRIVERS FOUND</string>
+    <string name="confirmation">CONFIRMATION</string>
+    <string name="request_pickup">REQUEST PICKUP</string>
+    <string name="request">REQUEST</string>
+    <string name="paymeny_type">PAYMENT TYPE</string>
+    <string name="addCard">Add Card</string>
+    <string name="driver_on_the_way">DRIVER ON THE WAY</string>
+    <string name="distance">DISTANCE</string>
+    <string name="surge_price">SURGE</string>
+    <string name="min_fair">MIN FARE</string>
+    <string name="max_size">MAX SIZE</string>
+    <string name="dispute_msg">Dispute Message?</string>
+    <string name="provide_valid_reason_for_dispute">Please provide us valid reason</string>
+    <string name="pls_enter_promo_code">Please enter promo code</string>
+    <string name="alert">Alert:</string>
+    <string name="skip_review_details">Are you sure to skip the review details</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="fare">Fare</string>
+    <string name="receipt">RECEIPT</string>
+    <string name="surgePrice">Surge Pricing</string>
+    <string name="surgeText">Fares have increased,click on I agree for higher fares to get a taxi or click on cancel to go back.</string>
+    <string name="notifyi">NOTIFYI ME ONCE SURGE ENDS</string>
+    <string name="acceptHigherRate">I ACCEPT HIGHER PRICE</string>
+    <string name="dispute">Dispute</string>
+    <string name="booking_id">Booking ID:</string>
+    <string name="duration">DURATION</string>
+    <string name="distance1">DISTANCE</string>
+    <string name="select">Select</string>
+    <string name="avg_speed">AVG SPEED</string>
+    <string name="rate_your_journey">RATE YOUR RIDE</string>
+    <string name="write_review">Leave a comment</string>
+    <string name="done">DONE</string>
+    <string name="summary">Summary</string>
+    <string name="logout_alert_message">Are you sure to logout?</string>
+    <string name="selecto_photo">Select Photo From</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="mobile_no">Mobile No*</string>
+    <string name="mobile_no_for_register">Mobile number*</string>
+    <string name="selectCountry">Select Country</string>
+    <string name="requesting">Requesting...</string>
+    <string name="cancelling">Cancelling...</string>
+    <string name="powered_by_Google">powered by Google</string>
+    <string name="slow_internet_connection">your internet connection is too slow or not working. Please try again.</string>
+    <string name="agree_terms_cond">By creating account you agree our</string>
+    <string name="You_did_not_enter_valid_card">You did not enter a valid card</string>
+    <string name="booking_history">Your Booking History</string>
+    <string name="card_num_empty">Card number should not be empty</string>
+    <string name="month_field_empty">Month field should not be empty</string>
+    <string name="mobileregistered">Mobile registered</string>
+    <string name="year_field_empty">Year field should not be empty</string>
+    <string name="cvv_field_empty">CVV field should not be empty</string>
+    <string name="signing_you_up">Registering...</string>
+    <string name="signup_success">SignUp Successfull!!</string>
+    <string name="success">Success</string>
+    <string name="have_any_issue">Have an issue visit</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="invite_share_message">Share your referral code. On every signup from your referral, earn an exclusive promo code!</string>
+    <string name="share_your_code">SHARE YOUR CODE</string>
+    <string name="share_your_experience">SHARE YOUR EXPERIENCE</string>
+    <string name="rate_your_experience">PLEASE RATE YOUR EXPERIENCE</string>
+    <string name="not_available_area">Sorry we are not available in your area , please contact Ourcabby.com to request our service in your area.</string>
+    <string name="CreditCardNumberHelp">Enter credit card number</string>
+    <string name="ExpirationDateHelp">Expiration date (MM/YY)</string>
+    <string name="SecurityCodeHelp">Security code</string>
+    <string name="driver_tip">TIP</string>
+    <string name="tapandhold">Tap and hold to cancel</string>
+    <string name="paypal_account">Paypal Account</string>
+    <string name="enter_paypal_account">Enter Paypal Account</string>
+    <string name="remove_paypal_account">Remove Paypal Account</string>
+    <string name="bookingsNotSelected">Booking must be at least one hour in the future</string>
+    <string name="addDropOfLocation">Add Dropoff Location</string>
+    <string name="yourLastRide">Your Last Trip</string>
+    <string name="needHelp">Need Help?</string>
+    <string name="close">CLOSE</string>
+    <string name="meterFee">Base Fare</string>
+    <string name="minFare">Min. Fare</string>
+    <string name="parking">Parking Fare</string>
+    <string name="distnceFee">Distance Fare</string>
+    <string name="timeFare">Time Fare</string>
+    <string name="airport">Airport Fare</string>
+    <string name="toll">Toll</string>
+    <string name="tip">Tip</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="discunt">Discount</string>
+    <string name="total">Total</string>
+    <string name="charged">Payment Type</string>
+    <string name="good_trip">Have a good trip</string>
+    <string name="pickup">PICK UP</string>
+    <string name="drop">DROP</string>
+    <string name="you_going">where are you going?</string>
+    <string name="leaveCommentTitle">LEAVE A COMMENT</string>
+    <string name="helpHint">Let us know your experience on this last trip and we will follow up with our team to improve your experience on your next ride.</string>
+    <string name="comment_string">Let us know your experience on this last trip and we will follow up with our team to improve your experience on your next ride.</string>
+    <string name="mobileNumber">MOBILE NUMBER</string>
+    <string name="emailprofile">EMAIL</string>
+    <string name="loadMore">Load More</string>
+    <string name="approxFare">APPROX FARE</string>
+    <string name="validating_mobile">Validating Mobile No...</string>
+    <string name="validating_email">Validating Email...</string>
+    <string name="validateReferal">Validating Referral Code...</string>
+    <string name="loggingIn">Logging in...</string>
+    <string name="poweredBy">Powered by </string>
+    <string name="and"> and </string>
+    <string name="note">Note :</string>
+    <string name="everyoneTaxi">EVERYONE\'S PRIVATE TAXI</string>
+    <string name="loggingOut">Logging out...</string>
+    <string name="sentVerification">We have sent a verification code on your</string>
+    <string name="number">number</string>
+    <string name="verificationCOde">Verification Code</string>
+    <string name="didnotSent">Did not receive it?</string>
+    <string name="messageAgain">Message again</string>
+    <string name="waitForVerification">Wait for verification code...</string>
+    <string name="verifying_otp">Verifying OTP...</string>
+    <string name="youHaveToFill">You will have to fill in your card details at the time of booking your first taxi.</string>
+    <string name="enterValidCard">Enter valid card details.</string>
+    <string name="sendingRequest">Sending Request</string>
+    <string name="exceed">Exceed</string>
+    <string name="bookingCompleted">Booking Completed</string>
+    <string name="facebook_app_id">1842570145993721</string>
+    <string name="cancel_booking">CANCEL BOOKING</string>
+    <string name="logout">LOGOUT</string>
+    <string name="request_on">REQUEST ON</string>
+    <string name="driverreached">DRIVER REACHED</string>
+    <string name="journeystarted">JOURNEY STARTED</string>
+    <string name="dis">Distance :</string>
+    <string name="time">Time :</string>
+    <string name="not_installed">Whatsapp not installed</string>
+    <string name="not_installed_tele">Telegram not installed</string>
+    <string name="destination_selected">Your final destination has been chosen successfully.</string>
+    <string name="no_network">Oops!! No network connection</string>
+    <string name="current_payment">Saved Cards</string>
+    <string name="topup_wallet">Topup wallet</string>
+    <string name="credit_card">Credit card</string>
+    <string name="low_bal">Balance is low</string>
+    <string name="add_money">Add Ourcabby Money</string>
+    <string name="quick_safe">It\'s quick,safe and secure</string>
+    <string name="add_money_button">Add Money</string>
+    <string name="need_to_be">The amount need to be more than ₹ 100</string>
+    <string name="add_money_warning">Specify the amount to be added to wallet</string>
+    <string name="current_bal">Current Balance</string>
+    <string name="recent_transaction">Recent transactions</string>
+    <string name="all">All</string>
+    <string name="moneyIn">Money-In</string>
+    <string name="moneyOut">Money-Out</string>
+    <string name="rms_booking">Ourcabby booking</string>
+    <string name="rms_recharge">Ourcabby money recharge:</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="balnce_is">Your current wallet amount is</string>
+    <string name="use_wallet">Do you want to use it for your current booking?</string>
+    <string name="do_more">Do more with Ourcabby wallet.</string>
+    <string name="one_tap">One tap access to all your daily needs </string>
+    <string name="ends">Ends with</string>
+    <string name="add_card_to_recharge">Please add card to recharge wallet</string>
+    <string name="wallet_credits">Credit Used</string>
+    <string name="invite_friends">Invite friends</string>
+    <string name="invite_code">Your invitation code</string>
+    <string name="share_via">Share via</string>
+    <string name="or">Or</string>
+    <string name="login_with_fb">Login with Facebook</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="email_address">EMAIL ADDRESS/PHONE NUMBER</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>BOOK A TAXI</item>
+        <item>WALLET</item>
+        <item>BOOKINGS</item>
+        <item>PROFILE</item>
+        <item>SUPPORT</item>
+        <item>FREE RIDE</item>
+        <item>ABOUT</item>
+    </string-array>
+
+    <string-array name="array_name_lang">
+        <item>Select Language</item>
+        <item>English</item>
+        <item>فارسی</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/menu_home</item>
+        <item>@drawable/menu_payment</item>
+        <item>@drawable/menu_booking</item>
+        <item>@drawable/menu_user</item>
+        <item>@drawable/menu_support</item>
+        <item>@drawable/menu_share</item>
+        <item>@drawable/menu_info</item>
+        <item>@drawable/menu_logout</item>
+    </array>
+    <string name="title_activity_surge_pricing">SurgePricingActivity</string>
+
+    <string-array name="DialingCountryCode">
+        <item>+32,BE</item>
+        <item>+501,BZ</item>
+        <item>+229,BJ</item>
+        <item>+975,BT</item>
+        <item>+591,BO</item>
+        <item>+387,BA</item>
+        <item>+267,BW</item>
+        <item>+55,BR</item>
+        <item>+673,BN</item>
+        <item>+359,BG</item>
+        <item>+226,BF</item>
+        <item>+95,MM</item>
+        <item>+257,BI</item>
+        <item>+855,KH</item>
+        <item>+237,CM</item>
+        <item>+1,CA</item>
+        <item>+238,CV</item>
+        <item>+236,CF</item>
+        <item>+235,TD</item>
+        <item>+56,CL</item>
+        <item>+86,CN</item>
+        <item>+61,CX</item>
+        <item>+61,CC</item>
+        <item>+57,CO</item>
+        <item>+269,KM</item>
+        <item>+242,CG</item>
+        <item>+243,CD</item>
+        <item>+682,CK</item>
+        <item>+506,CR</item>
+        <item>+385,HR</item>
+        <item>+53,CU</item>
+        <item>+357,CY</item>
+        <item>+93,AF</item>
+        <item>+355,AL</item>
+        <item>+213,DZ</item>
+        <item>+376,AD</item>
+        <item>+244,AO</item>
+        <item>+672,AQ</item>
+        <item>+54,AR</item>
+        <item>+374,AM</item>
+        <item>+297,AW</item>
+        <item>+61,AU</item>
+        <item>+43,AT</item>
+        <item>+994,AZ</item>
+        <item>+973,BH</item>
+        <item>+880,BD</item>
+        <item>+375,BY</item>
+        <item>+420,CZ</item>
+        <item>+45,DK</item>
+        <item>+253,DJ</item>
+        <item>+670,TL</item>
+        <item>+593,EC</item>
+        <item>+20,EG</item>
+        <item>+503,SV</item>
+        <item>+240,GQ</item>
+        <item>+358,FI</item>
+        <item>+33,FR</item>
+        <item>+291,ER</item>
+        <item>+372,EE</item>
+        <item>+251,ET</item>
+        <item>+500,FK</item>
+        <item>+298,FO</item>
+        <item>+679,FJ</item>
+        <item>+689,PF</item>
+        <item>+241,GA</item>
+        <item>+220,GM</item>
+        <item>+995,GE</item>
+        <item>+49,DE</item>
+        <item>+233,GH</item>
+        <item>+350,GI</item>
+        <item>+30,GR</item>
+        <item>+299,GL</item>
+        <item>+502,GT</item>
+        <item>+224,GN</item>
+        <item>+245,GW</item>
+        <item>+592,GY</item>
+        <item>+509,HT</item>
+        <item>+504,HN</item>
+        <item>+852,HK</item>
+        <item>+36,HU</item>
+        <item>+91,IN</item>
+        <item>+62,ID</item>
+        <item>+98,IR</item>
+        <item>+964,IQ</item>
+        <item>+353,IE</item>
+        <item>+44,IM</item>
+        <item>+972,IL</item>
+        <item>+39,IT</item>
+        <item>+225,CI</item>
+        <item>+81,JP</item>
+        <item>+962,JO</item>
+        <item>+7,KZ</item>
+        <item>+254,KE</item>
+        <item>+686,KI</item>
+        <item>+965,KW</item>
+        <item>+996,KG</item>
+        <item>+856,LA</item>
+        <item>+371,LV</item>
+        <item>+961,LB</item>
+        <item>+266,LS</item>
+        <item>+231,LR</item>
+        <item>+218,LY</item>
+        <item>+423,LI</item>
+        <item>+370,LT</item>
+        <item>+352,LU</item>
+        <item>+853,MO</item>
+        <item>+389,MK</item>
+        <item>+261,MG</item>
+        <item>+265,MW</item>
+        <item>+60,MY</item>
+        <item>+960,MV</item>
+        <item>+223,ML</item>
+        <item>+356,MT</item>
+        <item>+692,MH</item>
+        <item>+222,MR</item>
+        <item>+230,MU</item>
+        <item>+262,YT</item>
+        <item>+52,MX</item>
+        <item>+691,FM</item>
+        <item>+373,MD</item>
+        <item>+377,MC</item>
+        <item>+976,MN</item>
+        <item>+382,ME</item>
+        <item>+212,MA</item>
+        <item>+258,MZ</item>
+        <item>+264,NA</item>
+        <item>+674,NR</item>
+        <item>+977,NP</item>
+        <item>+31,NL</item>
+        <item>+599,AN</item>
+        <item>+687,NC</item>
+        <item>+64,NZ</item>
+        <item>+505,NI</item>
+        <item>+227,NE</item>
+        <item>+234,NG</item>
+        <item>+683,NU</item>
+        <item>+850,KP</item>
+        <item>+47,NO</item>
+        <item>+968,OM</item>
+        <item>+92,PK</item>
+        <item>+680,PW</item>
+        <item>+507,PA</item>
+        <item>+675,PG</item>
+        <item>+595,PY</item>
+        <item>+51,PE</item>
+        <item>+63,PH</item>
+        <item>+870,PN</item>
+        <item>+48,PL</item>
+        <item>+351,PT</item>
+        <item>+1,PR</item>
+        <item>+974,QA</item>
+        <item>+40,RO</item>
+        <item>+7,RU</item>
+        <item>+250,RW</item>
+        <item>+590,BL</item>
+        <item>+685,WS</item>
+        <item>+378,SM</item>
+        <item>+239,ST</item>
+        <item>+966,SA</item>
+        <item>+221,SN</item>
+        <item>+381,RS</item>
+        <item>+248,SC</item>
+        <item>+232,SL</item>
+        <item>+65,SG</item>
+        <item>+421,SK</item>
+        <item>+386,SI</item>
+        <item>+677,SB</item>
+        <item>+252,SO</item>
+        <item>+27,ZA</item>
+        <item>+82,KR</item>
+        <item>+34,ES</item>
+        <item>+94,LK</item>
+        <item>+290,SH</item>
+        <item>+508,PM</item>
+        <item>+249,SD</item>
+        <item>+597,SR</item>
+        <item>+268,SZ</item>
+        <item>+46,SE</item>
+        <item>+41,CH</item>
+        <item>+963,SY</item>
+        <item>+886,TW</item>
+        <item>+992,TJ</item>
+        <item>+255,TZ</item>
+        <item>+66,TH</item>
+        <item>+228,TG</item>
+        <item>+690,TK</item>
+        <item>+676,TO</item>
+        <item>+216,TN</item>
+        <item>+90,TR</item>
+        <item>+993,TM</item>
+        <item>+688,TV</item>
+        <item>+971,AE</item>
+        <item>+256,UG</item>
+        <item>+44,GB</item>
+        <item>+380,UA</item>
+        <item>+598,UY</item>
+        <item>+1,US</item>
+        <item>+998,UZ</item>
+        <item>+678,VU</item>
+        <item>+39,VA</item>
+        <item>+58,VE</item>
+        <item>+84,VN</item>
+        <item>+681,WF</item>
+        <item>+967,YE</item>
+        <item>+260,ZM</item>
+        <item>+263,ZW</item>
+    </string-array>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

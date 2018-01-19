@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "345541338111",
+    "firebase_url": "https://causal-port-162218.firebaseio.com",
+    "project_id": "causal-port-162218",
+    "storage_bucket": "causal-port-162218.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345541338111:android:c8d051bb002b7018",
+        "android_client_info": {
+          "package_name": "com.ourcabby.passenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345541338111-miarkpdo7kehia79pkr3rrrc4pmbshg5.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "345541338111-590vl54o43pla36vid17iv810onmg1h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDytADPjebrw8KzPaR9rUSyHEH_Kk_xfD0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345541338111-miarkpdo7kehia79pkr3rrrc4pmbshg5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

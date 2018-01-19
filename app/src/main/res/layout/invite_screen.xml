@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <TextView
+        android:id="@+id/share_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/invite_share_message"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_launcher"
+        android:layout_below="@+id/share_text"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="@string/invite_code"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/share_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:textIsSelectable="true"
+        android:layout_marginTop="20dp"
+        android:text="7HQSP"
+        android:textSize="40sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:id="@+id/invite_friends_layout"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_btn_selector">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/invite_friends"
+            android:layout_toStartOf="@+id/invite_friends"
+            android:background="@drawable/menu_share" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="?android:actionBarSize"
+            android:id="@+id/invite_friends"
+            android:text="@string/invite_friends"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

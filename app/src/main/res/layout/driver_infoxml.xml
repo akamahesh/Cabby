@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandedLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/downArrowColour">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver_time"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/down_arrow_icon"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dp"
+            android:textSize="12sp"
+            android:paddingBottom="2dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etaLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/eta_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:id="@+id/driver_dist"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view1"
+            android:background="@color/lightgrey"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/fstlnrout"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/driver_name"
+                    android:text=""
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/driver_car_plate_no"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/sndlnrout"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/invoice_profile_default_image"
+                    android:id="@+id/relativcarimage">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/drivehicalimg"
+                        /><!--android:background="@drawable/on_the_way_profile_default"   -->
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/invoice_profile_default_image"
+                    android:layout_toRightOf="@+id/relativcarimage"
+                    android:layout_toEndOf="@+id/relativcarimage"
+                    android:id="@+id/drivrimgreltvout"><!-- android:layout_marginLeft="-20dp"
+                        android:layout_marginStart="-20dp"-->
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/driver_profile_pic" /><!-- android:background="@drawable/on_the_way_profile_default"  android:layout_centerInParent="true"-->
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/sndnamlnrout"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/drivsnd"
+                    android:text=""
+                    android:layout_gravity="center"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/rating">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/starimg"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/driver_star_selected"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginEnd="2dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/drivvehicalrating"
+                        android:text=""
+                        android:layout_toRightOf="@+id/starimg"
+                        android:layout_toEndOf="@+id/starimg"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:background="@color/lightgrey"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressfstout"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconrout"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconlout"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circular_shapegreen"
+                        android:padding="5dp"
+                        android:id="@+id/fstcircular"
+                        />
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/lightgrey"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circular_shapered"
+                        android:padding="5dp"
+                        android:id="@+id/sndcircular"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/iconlout"
+                    android:layout_toRightOf="@+id/iconlout"
+                    android:layout_marginStart="5dp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/pickupaddresstv"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgrey"
+                    android:layout_toEndOf="@+id/iconlout"
+                    android:layout_toRightOf="@+id/iconlout"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/sepatinview"
+                    android:layout_below="@+id/pickupaddresstv"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/iconlout"
+                    android:layout_toRightOf="@+id/iconlout"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/dropaddresstv"
+                    android:textColorHint="@color/black"
+                    android:layout_below="@+id/sepatinview"
+                    android:hint="@string/addDropOfLocation"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginTop="3dp" /><!-- android:layout_below="@+id/addresstv"-->
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view3"
+            android:background="@color/lightgrey"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/drivcontlout"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/contact_driver"
+                android:orientation="horizontal"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingTop="2dp"
+                android:gravity="center"
+                android:paddingBottom="2dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneicn"
+                    android:background="@drawable/home_call_icon_off"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ocntecttv"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:text="@string/contact_driver"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/cancel_trip"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cancelicn"
+                    android:background="@drawable/home_cross_icon_off"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/canceltv"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:text="@string/cancel_trip"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/share_eta"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingBottom="2dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etaicn"
+                    android:background="@drawable/home_location_icon_off"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etatv"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:text="@string/share_eta"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/compressedLayout"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/downArrowColour">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driver_time_new"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/up_arrow_icon"
+                android:gravity="center_horizontal"
+                android:paddingTop="2dp"
+                android:textSize="12sp"
+                android:paddingBottom="2dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etaLayoutcom">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/eta_textcom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:id="@+id/driver_distcom"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view_new"
+            android:background="@color/lightgrey"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/fstlnrout_new"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/driver_name_new"
+                    android:text=""
+
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/driver_car_plate_no_new"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/sndlnrout_new"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/invoice_profile_default_image"
+                    android:id="@+id/relativcarimage_new">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/drivehicalimg_new"
+                        /><!--android:background="@drawable/on_the_way_profile_default"   -->
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/invoice_profile_default_image"
+                    android:layout_toRightOf="@+id/relativcarimage_new"
+                    android:layout_toEndOf="@+id/relativcarimage_new"
+                    android:id="@+id/drivrimgreltvout_new"><!-- android:layout_marginLeft="-20dp"
+                        android:layout_marginStart="-20dp"-->
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/driver_profile_pic_new" /><!-- android:background="@drawable/on_the_way_profile_default"  android:layout_centerInParent="true"-->
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/sndnamlnrout_new"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/drivsnd_new"
+                    android:text=""
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/rating_new">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/starimg_new"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/driver_star_selected"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginEnd="2dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/drivvehicalrating_new"
+                        android:text=""
+                        android:layout_toRightOf="@+id/starimg_new"
+                        android:layout_toEndOf="@+id/starimg_new"
+                        android:layout_centerVertical="true"
+
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2_new"
+            android:background="@color/lightgrey"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view3_new"
+            android:background="@color/lightgrey"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

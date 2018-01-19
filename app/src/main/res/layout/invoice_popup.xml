@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/need_help_background"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastRide"
+            android:text="@string/yourLastRide"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14.63sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastRide"
+            android:id="@+id/rideDate"
+            android:text="dvv"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/needHelp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:textSize="13.5sp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/needHelp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconrout"
+        android:layout_marginStart="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/addressBackground">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iconlout"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circular_shapegreen"
+                android:padding="5dp"
+                android:id="@+id/fstcircular"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/lightgrey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circular_shapered"
+                android:padding="5dp"
+                android:id="@+id/sndcircular"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pickUpLayout"
+            android:layout_toEndOf="@+id/iconlout"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iconlout"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pickDate"
+                android:paddingTop="08dp"
+                android:text="Pick up :"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:textColor="@color/lightgrey"
+            android:id="@+id/pickupaddresstv"
+            android:text="Pickjkjdfkjnkkdfkdfgkdfgdfgfdjkgkjdfgkjdfgjfgkfkgnfkgfgjkfkgjdfjkgnfkngkfngnfjngjkfgjfgjkdfngkdfkgndfjgnjdfg"
+            android:paddingTop="5dp"
+            android:textSize="14.06sp"
+            android:paddingBottom="3dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dropLayout"
+            android:orientation="vertical"
+            android:layout_marginTop="05dp"
+            android:layout_below="@+id/pickUpLayout"
+            android:layout_toEndOf="@+id/iconlout"
+            android:layout_toRightOf="@+id/iconlout"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dropDate"
+                android:text="Drop :"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/dropaddresstv"
+            android:textColorHint="@color/lightgrey"
+            android:hint="@string/addDropOfLocation"
+            android:textColor="@color/lightgrey"
+            android:singleLine="false"
+            android:paddingTop="5dp"
+            android:maxLines="2"
+            android:textSize="14.06sp"
+            android:paddingBottom="3dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/driverLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/addressBackground">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driverImage"
+            android:background="@drawable/invoice_profile_default_image"
+            android:layout_margin="05dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/receipt"
+            android:background="@drawable/need_help_background"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/receipt"
+            android:textSize="13.5sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/driverImage"
+            android:layout_toEndOf="@+id/driverImage"
+            android:layout_toLeftOf="@+id/receipt"
+            android:layout_toStartOf="@+id/receipt"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driverName"
+            android:textSize="14.57sp"
+            android:text="DRIVER NAME" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/amount"
+            android:textSize="16.88sp"
+            android:layout_marginTop="08dp"
+            android:text="DRIVER NAME"
+            android:layout_above="@+id/amount"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_rate_journey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_tip_discount_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/txt_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/rate_your_journey"
+            android:textSize="14.63sp"
+            android:textColor="#000000" />
+
+        <RatingBar
+            android:id="@+id/invoice_driver_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_rating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="25dp"
+            android:numStars="5"
+            android:progressDrawable="@drawable/invoice_rating"
+            android:rating="5.0"
+            android:stepSize="0.5" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/invoice_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_rate_journey"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/comment_background"
+        android:gravity="top"
+        android:hint="@string/write_review"
+        android:textSize="14.63sp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginTop="10dp"
+        android:id="@+id/submitButton"
+        android:background="@drawable/submit_background"
+        android:text="@string/submit"
+        android:textSize="14.62sp"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+</LinearLayout>

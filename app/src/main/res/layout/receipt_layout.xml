@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/need_help_background"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLayout"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="@string/receipt"
+            android:textSize="14.63sp"
+            android:textColor="@color/background"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookingId"
+            android:layout_below="@+id/title"
+            android:text="BID"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/popupHeight"
+        android:id="@+id/scrollview"
+        android:background="@color/addressBackground"
+        android:layout_below="@+id/topLayout">
+
+
+        <RelativeLayout
+            android:id="@+id/relative_tip_discount_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/invoice_subtotal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize">
+
+                <TextView
+                    android:id="@+id/invoice_subtotal_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="@string/meterFee" />
+
+                <TextView
+                    android:id="@+id/meterFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="$. 00" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/distanceLayout"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/invoice_subtotal_layout"
+                android:layout_height="?android:attr/actionBarSize">
+
+                <TextView
+                    android:id="@+id/distanceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="@string/distnceFee" />
+
+                <TextView
+                    android:id="@+id/distanceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="$. 00" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/timeLayout"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/distanceLayout"
+                android:layout_height="?android:attr/actionBarSize">
+
+                <TextView
+                    android:id="@+id/timeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="@string/timeFare" />
+
+                <TextView
+                    android:id="@+id/timeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="$. 00" />
+            </RelativeLayout>
+
+            <!--  <RelativeLayout
+                  android:id="@+id/parkingLayout"
+                  android:layout_width="match_parent"
+                  android:layout_below="@+id/timeLayout"
+                  android:layout_height="?android:attr/actionBarSize">
+
+                  <TextView
+                      android:id="@+id/parkingText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginStart="5dp"
+                      android:textSize="14.63sp"
+                      android:textColor="@color/receipt_text"
+                      android:text="@string/parking" />
+
+                  <TextView
+                      android:id="@+id/parkingValue"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="5dp"
+                      android:layout_marginEnd="5dp"
+                      android:textSize="14.63sp"
+                      android:textColor="@color/receipt_text"
+                      android:text="$. 00" />
+              </RelativeLayout>
+      -->
+            <RelativeLayout
+                android:id="@+id/airportLayout"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/timeLayout"
+                android:layout_height="?android:attr/actionBarSize">
+
+                <TextView
+                    android:id="@+id/airportText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="@string/airport" />
+
+                <TextView
+                    android:id="@+id/airportValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="$. 00" />
+            </RelativeLayout>
+
+            <!-- <RelativeLayout
+                 android:id="@+id/tollLayout"
+                 android:layout_width="match_parent"
+                 android:layout_below="@+id/airportLayout"
+                 android:layout_height="?android:attr/actionBarSize">
+
+                 <TextView
+                     android:id="@+id/tollTExt"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:layout_marginLeft="5dp"
+                     android:layout_marginStart="5dp"
+                     android:textSize="14.63sp"
+                     android:textColor="@color/receipt_text"
+                     android:text="@string/toll" />
+
+                 <TextView
+                     android:id="@+id/tollValue"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentEnd="true"
+                     android:layout_centerVertical="true"
+                     android:layout_marginRight="5dp"
+                     android:layout_marginEnd="5dp"
+                     android:textSize="14.63sp"
+                     android:textColor="@color/receipt_text"
+                     android:text="$. 00" />
+             </RelativeLayout>-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/viewTop"
+                android:layout_below="@+id/airportLayout"
+                android:background="@color/divider"/>
+
+
+            <RelativeLayout
+                android:id="@+id/invoice_discount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_below="@+id/viewTop">
+
+                <TextView
+                    android:id="@+id/invoice_discount_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="@string/discunt" />
+
+                <TextView
+                    android:id="@+id/invoice_discount_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="$. 00" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/subtotal"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_below="@+id/invoice_discount_layout">
+
+                <TextView
+                    android:id="@+id/subtotalLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="@string/subtotal" />
+
+                <TextView
+                    android:id="@+id/subtotalValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="$. 00" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/invoice_min_fare_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_below="@+id/subtotal">
+
+                <TextView
+                    android:id="@+id/invoice_min_fare_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="@string/minFare" />
+
+                <TextView
+                    android:id="@+id/minFare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="$. 00" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view"
+                android:layout_below="@+id/invoice_min_fare_layout"
+                android:background="@color/divider"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/invoice_newsubtotal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_below="@+id/view">
+
+                <TextView
+                    android:id="@+id/invoice_newsubtotal_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="@string/tip" />
+
+                <TextView
+                    android:id="@+id/tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="14.63sp"
+                    android:textColor="@color/receipt_text"
+                    android:text="$. 00" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/wallet_deducted_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_below="@+id/invoice_newsubtotal_layout"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/wallet_deducted_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/receipt_text"
+                    android:textSize="14.63sp"
+                    android:text="@string/wallet_credits" />
+
+                <TextView
+                    android:id="@+id/wallet_deuct_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/receipt_text"
+                    android:textSize="14.63sp"
+                    android:text="$. 00.00" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/invoice_total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_below="@+id/wallet_deducted_layout">
+
+                <TextView
+                    android:id="@+id/invoice_total_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/receipt_text"
+                    android:textSize="14.63sp"
+                    android:text="@string/total" />
+
+                <TextView
+                    android:id="@+id/invoice_total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/receipt_text"
+                    android:textSize="14.63sp"
+                    android:text="$. 00.00" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view2"
+                android:layout_below="@+id/invoice_total_layout"
+                android:background="@color/divider"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:layout_below="@+id/view2"
+                android:id="@+id/chargedTexxt"
+                android:gravity="center_vertical"
+                android:paddingLeft="05dp"
+                android:textColor="@color/background"
+                android:textSize="14.63sp"
+                android:text="@string/charged"/>
+
+            <RelativeLayout
+                android:id="@+id/typeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_below="@+id/chargedTexxt">
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/receipt_text"
+                    android:textSize="14.63sp"
+                    android:text="@string/total" />
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/receipt_text"
+                    android:textSize="14.63sp"
+                    android:text="$. 00.00" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitButton"
+        android:background="@drawable/submit_background"
+        android:layout_below="@+id/scrollview"
+        android:text="@string/close"
+        android:textSize="14.62sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

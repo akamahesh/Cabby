@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_smoke"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/signup_payment_navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background" >
+
+        <Button
+            android:id="@+id/signup_payment_back"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back_button"
+            android:text="@string/back"
+            android:textColor="@drawable/white_to_black_text"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/signup_payment_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back_button"
+            android:text="@string/skip"
+            android:textColor="@drawable/white_to_black_text" />
+
+        <TextView
+            android:id="@+id/txt_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/create_account"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_create_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/timeline_third_step"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_credit_card_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_payment_navigationbar"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/btn_scan_your_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/camera_selector"
+            android:onClick="onScanPress" />
+
+        <EditText
+            android:id="@+id/credit_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toLeftOf="@+id/btn_scan_your_card"
+            android:layout_toStartOf="@+id/btn_scan_your_card"
+            android:hint="@string/credit_card_num"
+            android:inputType="numberDecimal"
+            android:maxLength="16"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <LinearLayout
+            android:id="@+id/month_year_cvv_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/credit_card_number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@+id/card_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="@string/mm"
+                android:inputType="numberDecimal"
+                android:maxLength="2"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+
+            <EditText
+                android:id="@+id/card_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="@string/yyyy"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+
+            <EditText
+                android:id="@+id/card_cvv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/cvv"
+                android:inputType="numberDecimal"
+                android:maxLength="3"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_credit_card_details"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/payment_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card_scan_button"
+        android:text="@string/done"
+        android:textColor="@drawable/white_to_black_text" />
+
+    <Button
+        android:id="@+id/scanCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment_done"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card_scan_button"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="onScanPress"
+        android:text="@string/scan_credit_card"
+        android:textColor="@drawable/white_to_black_text" />
+
+
+</RelativeLayout>

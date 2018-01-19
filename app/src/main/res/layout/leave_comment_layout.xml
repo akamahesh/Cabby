@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/popupHeight"
+    android:background="@drawable/need_help_background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:id="@+id/layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="?android:actionBarSize"
+            android:id="@+id/title"
+            android:text="@string/write_review"
+            android:textSize="14.63sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center|start"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/backButton"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/need_help_background"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/backButton" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/divider"
+        android:background="@color/background"
+        android:layout_below="@+id/layout"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider"
+        android:layout_above="@+id/submit"
+        android:id="@+id/hint">
+
+        <EditText
+            android:id="@+id/user_dispute_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:lineSpacingExtra="05dp"
+            android:inputType="textMultiLine"
+            android:hint="@string/comment_string"
+            android:textColorHint="@color/lightgrey"
+            android:padding="10dp"
+            android:textColor="@color/lightgrey"
+            android:textSize="14.06sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/submit_background"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="14.62sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"/>
+
+
+</RelativeLayout>
